@@ -1,1 +1,77 @@
-/* No CSS *//*# sourceMappingURL=styles.css.map */
+.home {
+  padding: 0 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.blogCard {
+  max-width: 600px;
+  width: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #dddddd;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+
+.blogCard .left {
+  margin-right: 20px;
+  max-width: 430px;
+}
+
+.blogCard .left .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 13px;
+  color: #757575;
+  font-weight: 500;
+  margin: 0 0;
+}
+
+.blogCard .left .top .author {
+  margin-right: 10px;
+  color: #292929;
+}
+
+.blogCard .left .main .title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #292929;
+  line-height: 28px;
+  margin: 0 0;
+}
+
+.blogCard .left .main .description {
+  font-size: 15px;
+  font-weight: 500;
+  color: #757575;
+  line-height: 20px;
+  margin: 0 0;
+}
+
+.blogCard .left .main .readTime {
+  font-size: 13px;
+  font-weight: 500;
+  color: #757575;
+  margin-top: 10px;
+}
+
+.blogCard .right .image {
+  height: 100px;
+  width: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+}
+/*# sourceMappingURL=styles.css.map */
