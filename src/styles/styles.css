@@ -180,6 +180,7 @@
   border: 3px solid #dddddd;
   border-radius: 15px;
   padding: 10px 30px;
+  margin-bottom: 100px;
 }
 
 .login .container .title {
@@ -270,6 +271,120 @@
 }
 
 .login .container .signUp .right {
+  font-size: 18px;
+  font-weight: 700;
+  color: #292929;
+}
+
+.signUp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.signUp .container {
+  margin-top: 75px;
+  margin-bottom: 100px;
+  width: 450px;
+  border: 3px solid #dddddd;
+  border-radius: 15px;
+  padding: 10px 30px;
+}
+
+.signUp .container .title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  color: #292929;
+  letter-spacing: 5px;
+  margin-top: 30px;
+  margin-bottom: 80px;
+}
+
+.signUp .container .input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.signUp .container .input .text {
+  font-size: 20px;
+  font-weight: 500;
+  color: #292929;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  letter-spacing: 5px;
+}
+
+.signUp .container .input .fill {
+  width: 100%;
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid #dddddd;
+  background-color: #dddddd;
+  padding: 3px 15px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #757575;
+  letter-spacing: 5px;
+  margin-left: -15px;
+  margin-bottom: 15px;
+}
+
+.signUp .container .button {
+  width: 60%;
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid #292929;
+  background-color: #292929;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  letter-spacing: 5px;
+  margin-left: 20%;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  -webkit-transition: ease-in 0.2s;
+  transition: ease-in 0.2s;
+}
+
+.signUp .container .button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.signUp .container .signIn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 16px;
+  font-weight: 500;
+  color: #757575;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 10%;
+}
+
+.signUp .container .signIn .right {
   font-size: 18px;
   font-weight: 700;
   color: #292929;

@@ -153,6 +153,7 @@ $gray-color-light: #dddddd;
     border: 3px solid $gray-color-light;
     border-radius: 15px;
     padding: 10px 30px;
+    margin-bottom: 100px;
 
     .title{
       text-align: center;
@@ -218,6 +219,100 @@ $gray-color-light: #dddddd;
     }
 
     .signUp{
+      display: flex;
+      justify-content: space-between;
+      font-size: 16px;
+      font-weight: 500;
+      color: $gray-color;
+      align-items: center;
+      padding: 0 10%;
+
+      .right{
+        font-size: 18px;
+        font-weight: 700;
+        color: $black-color;
+      }
+    }
+  }
+}
+
+.signUp{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .container{
+    margin-top: 75px;
+    margin-bottom: 100px;
+    width: 450px;
+    border: 3px solid $gray-color-light;
+    border-radius: 15px;
+    padding: 10px 30px;
+
+    .title{
+      text-align: center;
+      font-size: 36px;
+      font-weight: 700;
+      color: $black-color;
+      letter-spacing: 5px;
+      margin-top: 30px;
+      margin-bottom: 80px;
+    }
+
+    .input{
+      width: 100%;
+      margin-bottom: 20px;
+
+      .text{
+        font-size: 20px;
+        font-weight: 500;
+        color: $black-color;
+        margin-bottom: 10px;
+        margin-left: 5px;
+        letter-spacing: 5px;
+      }
+
+      .fill{
+        width: 100%;
+        height: 40px;
+        border-radius: 20px;
+        border: 1px solid $gray-color-light;
+        background-color: $gray-color-light;
+        padding: 3px 15px;
+        font-size: 16px;
+        font-weight: 500;
+        color: $gray-color;
+        letter-spacing: 5px;
+        margin-left: -15px;
+        margin-bottom: 15px;
+      }
+    }
+
+    .button{
+      width: 60%;
+      height: 40px;
+      border-radius: 20px;
+      border: 1px solid $black-color;
+      background-color: $black-color;
+      font-size: 18px;
+      font-weight: 500;
+      color: $white-color;
+      letter-spacing: 5px;
+      margin-left: 20%;
+      margin-top: 50px;
+      margin-bottom: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: ease-in 0.2s;
+
+      &:hover{
+        transform: scale(1.1);
+      }
+    }
+
+    .signIn{
       display: flex;
       justify-content: space-between;
       font-size: 16px;
