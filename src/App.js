@@ -1,7 +1,8 @@
 // import HomeScreen from "./screens/HomeScreen";
 // import LoginScreen from "./screens/LoginScreen";
 // import SignUpScreen from "./screens/SignUpScreen";
-import WriteScreen from "./screens/WriteScreen";
+import ProfileScreen from "./screens/ProfileScreen";
+// import WriteScreen from "./screens/WriteScreen";
 
 function App() {
   return (
@@ -9,7 +10,8 @@ function App() {
       {/* <HomeScreen /> */}
       {/* <LoginScreen /> */}
       {/* <SignUpScreen /> */}
-      <WriteScreen />
+      {/* <WriteScreen /> */}
+      <ProfileScreen />
     </div>
   );
 }

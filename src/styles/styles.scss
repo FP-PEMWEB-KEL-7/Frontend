@@ -128,6 +128,29 @@ $gray-color-light: #dddddd;
         color: $gray-color;
         margin-top: 10px;
       }
+
+      .action{
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+        font-size: 16px;
+        color: $gray-color;
+        text-decoration: none;
+
+        .updateAction,
+        .deleteAction{
+          margin-right: 20px;
+          color: $gray-color;
+          text-decoration: none;
+          font-weight: 500;
+          transition: ease-in 0.2s;
+
+          &:hover{
+            color: $black-color;
+            transform: scale(1.1);
+          }
+        }
+      }
     }
 
   }
@@ -384,6 +407,55 @@ $gray-color-light: #dddddd;
       &:hover{
         transform: scale(1.1);
       }
+    }
+  }
+}
+
+.profile{
+  .container{
+    margin-top: 60px;
+    margin-bottom: 50px;
+    padding: 0px 50px;
+    display: flex;
+
+    .leftSide{
+      flex: 0.4;
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      // position: fixed;
+
+      .profileImage{
+        height: 296px;
+        width: 296px;
+        border-radius: 50%;
+        border: 2px solid $gray-color-light;
+        color: $gray-color-light;
+      }
+
+      .name{
+        font-size: 36px;
+        font-weight: 700;
+        color: $black-color;
+        margin: 0 0;
+      }
+
+      .totalArticle{
+        font-size: 24px;
+        font-weight: 500;
+        color: $gray-color;
+        margin: 0 0;
+      }
+    }
+
+    .rightSide{
+      flex: 0.6;
+      // background-color: red;
+      display: flex;
+      width: 500px;
+      flex-direction: column;
     }
   }
 }

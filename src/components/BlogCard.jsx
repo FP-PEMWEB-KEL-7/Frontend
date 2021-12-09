@@ -1,7 +1,7 @@
 import React from 'react'
 import '../styles/styles.css'
 
-const BlogCard = ({ description }) => {
+const BlogCard = ({ description, profileScreen }) => {
 
   return (
     <div className="blogCard">
@@ -16,6 +16,13 @@ const BlogCard = ({ description }) => {
             {(description.length > 130) ? ((description.substring(0,130)) + '...') : description}
           </p>
           <p className="readTime">8 mins read</p>
+          {
+            profileScreen === true && 
+            <div className="action">
+              <a href=" " className="updateAction">Edit</a>
+              <a href=" " className="deleteAction">Delete</a>
+            </div>
+          }
         </div>
       </div>
       <div className="right">

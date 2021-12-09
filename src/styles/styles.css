@@ -154,6 +154,36 @@
   margin-top: 10px;
 }
 
+.blogCard .left .main .action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #757575;
+  text-decoration: none;
+}
+
+.blogCard .left .main .action .updateAction,
+.blogCard .left .main .action .deleteAction {
+  margin-right: 20px;
+  color: #757575;
+  text-decoration: none;
+  font-weight: 500;
+  -webkit-transition: ease-in 0.2s;
+  transition: ease-in 0.2s;
+}
+
+.blogCard .left .main .action .updateAction:hover,
+.blogCard .left .main .action .deleteAction:hover {
+  color: #292929;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 .blogCard .right .image {
   height: 100px;
   width: 150px;
@@ -460,5 +490,70 @@
 .write .container .button:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+.profile .container {
+  margin-top: 60px;
+  margin-bottom: 50px;
+  padding: 0px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.profile .container .leftSide {
+  -webkit-box-flex: 0.4;
+      -ms-flex: 0.4;
+          flex: 0.4;
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.profile .container .leftSide .profileImage {
+  height: 296px;
+  width: 296px;
+  border-radius: 50%;
+  border: 2px solid #dddddd;
+  color: #dddddd;
+}
+
+.profile .container .leftSide .name {
+  font-size: 36px;
+  font-weight: 700;
+  color: #292929;
+  margin: 0 0;
+}
+
+.profile .container .leftSide .totalArticle {
+  font-size: 24px;
+  font-weight: 500;
+  color: #757575;
+  margin: 0 0;
+}
+
+.profile .container .rightSide {
+  -webkit-box-flex: 0.6;
+      -ms-flex: 0.6;
+          flex: 0.6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 500px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 /*# sourceMappingURL=styles.css.map */
