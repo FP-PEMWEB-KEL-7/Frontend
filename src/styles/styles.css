@@ -556,4 +556,80 @@
       -ms-flex-direction: column;
           flex-direction: column;
 }
+
+.read {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.read .container {
+  margin-top: 60px;
+  margin-bottom: 100px;
+  max-width: 800px;
+  width: 800px;
+}
+
+.read .container .title {
+  font-size: 48px;
+  font-weight: 400;
+  color: #292929;
+  margin-bottom: 0;
+}
+
+.read .container .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px;
+}
+
+.read .container .info .infoLeft .profileImage {
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+}
+
+.read .container .info .infoRight {
+  margin-left: 20px;
+  font-size: 14px;
+  color: #757575;
+  font-weight: 500;
+}
+
+.read .container .info .infoRight .author {
+  margin: 0;
+  font-weight: 700;
+  color: #292929;
+}
+
+.read .container .info .infoRight .time {
+  margin: 0;
+}
+
+.read .container .mainImage {
+  height: 380px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+.read .container .mainArticle {
+  font-size: 21px;
+  color: #292929;
+  font-weight: 500;
+  text-align: justify;
+  margin-top: 30px;
+}
 /*# sourceMappingURL=styles.css.map */
