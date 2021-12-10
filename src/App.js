@@ -2,7 +2,8 @@
 // import LoginScreen from "./screens/LoginScreen";
 // import SignUpScreen from "./screens/SignUpScreen";
 // import ProfileScreen from "./screens/ProfileScreen";
-import ReadScreen from "./screens/ReadScreen";
+// import ReadScreen from "./screens/ReadScreen";
+import SettingsScreen from "./screens/SettingsScreen";
 // import WriteScreen from "./screens/WriteScreen";
 
 function App() {
@@ -13,7 +14,8 @@ function App() {
       {/* <SignUpScreen /> */}
       {/* <WriteScreen /> */}
       {/* <ProfileScreen /> */}
-      <ReadScreen />
+      {/* <ReadScreen /> */}
+      <SettingsScreen />
     </div>
   );
 }
