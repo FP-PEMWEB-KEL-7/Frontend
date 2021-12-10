@@ -591,12 +591,17 @@
       -ms-flex-align: center;
           align-items: center;
   margin-top: 30px;
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  padding: 10px;
 }
 
 .read .container .info .infoLeft .profileImage {
   height: 48px;
   width: 48px;
   border-radius: 50%;
+  color: #757575;
+  opacity: 0.5;
 }
 
 .read .container .info .infoRight {
@@ -626,10 +631,13 @@
 }
 
 .read .container .mainArticle {
-  font-size: 21px;
+  font-size: 18px;
   color: #292929;
-  font-weight: 500;
-  text-align: justify;
+  font-weight: 400;
   margin-top: 30px;
+  letter-spacing: 2px;
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  padding: 10px;
 }
 /*# sourceMappingURL=styles.css.map */

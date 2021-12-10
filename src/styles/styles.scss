@@ -482,12 +482,17 @@ $gray-color-light: #dddddd;
       display: flex;
       align-items: center;
       margin-top: 30px;
+      border-top: 1px solid $gray-color-light;
+      border-bottom: 1px solid $gray-color-light;
+      padding: 10px;
 
       .infoLeft{
         .profileImage{
           height: 48px;
           width: 48px;
           border-radius: 50%;
+          color: $gray-color;
+          opacity: 0.5;
         }
       }
 
@@ -518,11 +523,14 @@ $gray-color-light: #dddddd;
     }
 
     .mainArticle{
-      font-size: 21px;
+      font-size: 18px;
       color: $black-color;
-      font-weight: 500;
-      text-align: justify;
+      font-weight: 400;
       margin-top: 30px;
+      letter-spacing: 2px;
+      border-top: 1px solid $gray-color-light;
+      border-bottom: 1px solid $gray-color-light;
+      padding: 10px;
     }
   }
 }

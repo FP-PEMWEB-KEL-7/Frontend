@@ -1,4 +1,4 @@
-import { UserIcon } from '@heroicons/react/solid'
+import { UserCircleIcon } from '@heroicons/react/solid'
 import React from 'react'
 import Navbar from '../components/Navbar'
 
@@ -12,14 +12,14 @@ const ReadScreen = () => {
         <p className="title">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
         <div className="info">
           <div className="infoLeft">
-            <UserIcon className='profileImage' />
+            <UserCircleIcon className='profileImage' />
           </div>
           <div className="infoRight">
             <p className="author">Michael Jeffry Setiawan</p>
             <p className="time">9 December 2021 - 8 min read</p>
           </div>
         </div>
-        <img src="https://miro.medium.com/fit/c/250/168/0*b6tqs9K4yPmIkM3D" alt="testing" className='mainImage' />
+        <img src="https://miro.medium.com/max/1400/1*1M5IApSJhFC-jnjCbolZkw.jpeg" alt="testing" className='mainImage' />
         <p className="mainArticle">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex illum amet enim doloremque dolor laborum, itaque odio officia? Facilis, iusto. Modi rerum aperiam ipsa possimus at consequatur nesciunt debitis itaque?
 
