@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 
 const WriteScreen = () => {
@@ -26,7 +27,9 @@ const WriteScreen = () => {
           autoComplete="off"
         ></textarea>
         <div className="button">
-          <p className="text">Save Article</p>
+          <Link to='/' className="text">
+            <p className="text">Save Article</p>
+          </Link>
         </div>
       </div>
     </div>

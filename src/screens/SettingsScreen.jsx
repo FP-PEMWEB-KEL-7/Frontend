@@ -1,5 +1,6 @@
 import { UserCircleIcon } from '@heroicons/react/solid'
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import Navbar from '../components/Navbar'
 
 const SettingsScreen = () => {
@@ -25,7 +26,7 @@ const SettingsScreen = () => {
             <p className="total">12 Article Written</p>
           </div>
           <div className="button">
-            <p className="text">Logout</p>
+            <Link to='/' className='text'>Logout</Link>
           </div>
         </div>
         <p className="title">Change Your Profile ?</p>
@@ -41,7 +42,7 @@ const SettingsScreen = () => {
                 <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder='Enter Your New Password' autoComplete='off' className="fill" />
               </div>
               <div className="button" onClick={updateProfile}>
-                <p className="text">Update Profile Account</p>
+                <Link to='/' className="text">Update Profile Account</Link>
               </div>
             </form>
           </div>

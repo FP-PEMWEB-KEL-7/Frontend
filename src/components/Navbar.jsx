@@ -1,33 +1,40 @@
-import React, { useState } from 'react'
-import Logo from '../assets/images/medium-logo.png'
-import { UserIcon, PlusIcon, CogIcon } from '@heroicons/react/solid'
-import '../styles/styles.css'
+import React from "react";
+import Logo from "../assets/images/medium-logo.png";
+import { UserCircleIcon, PlusIcon, CogIcon } from "@heroicons/react/solid";
+import "../styles/styles.css";
+import { Link } from "react-router-dom";
 
-const Navbar = ({ loginScreen }) => {
-  const [login, setLogin] = useState(false)
-
+const Navbar = ({ loginScreen, isLogin }) => {
   return (
     <div className="navbar">
-      <img src={Logo} alt="Logo" className='image' />
-      { loginScreen === false && (
+      <Link to="/">
+        <img src={Logo} alt="Logo" className="image" />
+      </Link>
+      {loginScreen === false && (
         <div className="right">
-          {
-            login === false ? (
-              <div className='loginButton'>
-                <p>Login</p>
-              </div>
-            ) : (
-              <>
-                <PlusIcon className='icon' />
-                <UserIcon className='icon' />
-                <CogIcon className='icon' />
-              </>
-            )
-          }
+          {isLogin === false ? (
+            <div className="loginButton">
+              <Link to="/login" className="text">
+                Login
+              </Link>
+            </div>
+          ) : (
+            <>
+              <Link to="/write">
+                <PlusIcon className="icon" />
+              </Link>
+              <Link to="/profile">
+                <UserCircleIcon className="icon" />
+              </Link>
+              <Link to="/settings">
+                <CogIcon className="icon" />
+              </Link>
+            </>
+          )}
         </div>
       )}
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

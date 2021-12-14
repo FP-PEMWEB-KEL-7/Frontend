@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import Navbar from '../components/Navbar'
 
 const LoginScreen = () => {
@@ -27,11 +28,11 @@ const LoginScreen = () => {
           </div>
         </form>
         <div className="button" onClick={login}>
-          <p className="text">Login</p>
+          <Link to="/" className='text'>Login</Link>
         </div>
         <div className="signUp">
           <p className="left">Don't have account ?</p>
-          <p className="right">Sign Up</p>
+          <Link to='signup' className="right">Sign Up</Link>
         </div>
       </div>
     </div>

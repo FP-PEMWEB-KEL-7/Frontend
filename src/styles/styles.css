@@ -71,11 +71,16 @@
           transform: scale(1.1);
 }
 
+.navbar .right .loginButton .text {
+  text-decoration: none;
+  color: #292929;
+}
+
 .navbar .right .icon {
   height: 30px;
   width: 30px;
   border-radius: 50%;
-  margin-left: 15px;
+  margin-left: 30px;
   color: #dddddd;
   cursor: pointer;
 }
@@ -129,6 +134,7 @@
 .blogCard .left .top .author {
   margin-right: 10px;
   color: #292929;
+  text-decoration: none;
 }
 
 .blogCard .left .main .title {
@@ -137,6 +143,8 @@
   color: #292929;
   line-height: 28px;
   margin: 0 0;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .blogCard .left .main .description {
@@ -284,6 +292,11 @@
           transform: scale(1.1);
 }
 
+.login .container .button .text {
+  text-decoration: none;
+  color: #fff;
+}
+
 .login .container .signUp {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -304,6 +317,7 @@
   font-size: 18px;
   font-weight: 700;
   color: #292929;
+  text-decoration: none;
 }
 
 .signUp {
@@ -398,6 +412,11 @@
           transform: scale(1.1);
 }
 
+.signUp .container .button .text {
+  text-decoration: none;
+  color: #fff;
+}
+
 .signUp .container .signIn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -418,6 +437,7 @@
   font-size: 18px;
   font-weight: 700;
   color: #292929;
+  text-decoration: none;
 }
 
 .write {
@@ -492,6 +512,11 @@
           transform: scale(1.1);
 }
 
+.write .container .button .text {
+  text-decoration: none;
+  color: #fff;
+}
+
 .profile .container {
   margin-top: 60px;
   margin-bottom: 50px;
@@ -522,10 +547,8 @@
 }
 
 .profile .container .leftSide .profileImage {
-  height: 296px;
-  width: 296px;
-  border-radius: 50%;
-  border: 2px solid #dddddd;
+  height: 320px;
+  width: 320px;
   color: #dddddd;
 }
 
@@ -722,6 +745,11 @@
           justify-content: center;
 }
 
+.settings .container .info .button .text {
+  text-decoration: none;
+  color: #757575;
+}
+
 .settings .container .title {
   font-size: 30px;
   font-weight: 400;
@@ -800,6 +828,11 @@
 .settings .container .containerMain .left .form .button:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+.settings .container .containerMain .left .form .button .text {
+  text-decoration: none;
+  color: #fff;
 }
 
 .settings .container .containerMain .right {

@@ -1,5 +1,7 @@
 import React from 'react'
 import '../styles/styles.css'
+import { Link } from "react-router-dom";
+
 
 const BlogCard = ({ description, profileScreen }) => {
 
@@ -7,11 +9,15 @@ const BlogCard = ({ description, profileScreen }) => {
     <div className="blogCard">
       <div className="left">
         <div className="top">
-          <p className="author">Michael Jeffry Setiawan</p>
+          <Link to="/profile" className='author'>
+            <p className="author">micjef</p>
+          </Link>
           <p className="time">9 December 2021</p>
         </div>
         <div className="main">
-          <p className="title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <Link to="/read" className='title'>
+            <p className="title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </Link>
           <p className="description">
             {(description.length > 130) ? ((description.substring(0,130)) + '...') : description}
           </p>

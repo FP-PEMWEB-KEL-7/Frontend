@@ -53,13 +53,18 @@ $gray-color-light: #dddddd;
       &:hover{
         transform: scale(1.1);
       }
+
+      .text{
+        text-decoration: none;
+        color: $black-color;
+      }
     }
 
     .icon{
       height:30px;
       width: 30px;
       border-radius: 50%;
-      margin-left: 15px;
+      margin-left: 30px;
       color: $gray-color-light;
       cursor: pointer;
 
@@ -103,6 +108,7 @@ $gray-color-light: #dddddd;
       .author{
         margin-right: 10px;
         color: $black-color;
+        text-decoration: none;
       }
     }
     .main{
@@ -112,6 +118,8 @@ $gray-color-light: #dddddd;
         color: $black-color;
         line-height: 28px;
         margin: 0 0;
+        text-decoration: none;
+        cursor: pointer;
       }
 
       .description{
@@ -239,6 +247,11 @@ $gray-color-light: #dddddd;
       &:hover{
         transform: scale(1.1);
       }
+
+      .text{
+        text-decoration: none;
+        color: $white-color;
+      }
     }
 
     .signUp{
@@ -254,6 +267,7 @@ $gray-color-light: #dddddd;
         font-size: 18px;
         font-weight: 700;
         color: $black-color;
+        text-decoration: none;
       }
     }
   }
@@ -333,6 +347,11 @@ $gray-color-light: #dddddd;
       &:hover{
         transform: scale(1.1);
       }
+
+      .text{
+        text-decoration: none;
+        color: $white-color;
+      }
     }
 
     .signIn{
@@ -348,6 +367,7 @@ $gray-color-light: #dddddd;
         font-size: 18px;
         font-weight: 700;
         color: $black-color;
+        text-decoration: none;
       }
     }
   }
@@ -407,6 +427,11 @@ $gray-color-light: #dddddd;
       &:hover{
         transform: scale(1.1);
       }
+
+      .text{
+        text-decoration: none;
+        color: $white-color;
+      }
     }
   }
 }
@@ -428,10 +453,10 @@ $gray-color-light: #dddddd;
       // position: fixed;
 
       .profileImage{
-        height: 296px;
-        width: 296px;
-        border-radius: 50%;
-        border: 2px solid $gray-color-light;
+        height: 320px;
+        width: 320px;
+        // border-radius: 50%;
+        // border: 2px solid $gray-color-light;
         color: $gray-color-light;
       }
 
@@ -595,6 +620,11 @@ $gray-color-light: #dddddd;
         display: flex;
         align-items: center;
         justify-content: center;
+
+        .text{
+          text-decoration: none;
+          color: $gray-color;
+        }
       }
     }
 
@@ -663,6 +693,11 @@ $gray-color-light: #dddddd;
       
             &:hover{
               transform: scale(1.1);
+            }
+
+            .text{
+              text-decoration: none;
+              color: $white-color;
             }
           }
         }
