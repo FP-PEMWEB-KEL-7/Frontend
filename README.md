@@ -8,3 +8,4 @@
 5. mobile screen
 6. write article logic in write screen
 7. login and sign up logic
+8. Logo and Name App
