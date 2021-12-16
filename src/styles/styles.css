@@ -854,6 +854,115 @@
   color: #dddddd;
 }
 
+@media (max-width: 770px) and (min-width: 500px) {
+  .profile .container {
+    padding: 0 0 0 5vw;
+    max-width: 95vw;
+    width: 95vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .profile .container .leftSide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: 95vw;
+    max-width: 95vw;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .profile .container .leftSide .profileImage {
+    height: 48px;
+    width: 48px;
+  }
+  .profile .container .leftSide .name {
+    font-size: 24px;
+    margin: 0 10px;
+  }
+  .profile .container .leftSide .totalArticle {
+    font-size: 14px;
+  }
+  .profile .container .rightSide {
+    width: 95vw;
+  }
+  .settings .container .info {
+    padding: 0;
+    max-width: 95vw;
+    width: 95vw;
+    margin-left: 2.5vw;
+  }
+  .settings .container .info .infoCenter {
+    font-size: 14px;
+  }
+  .settings .container .info .button {
+    font-size: 16px;
+    cursor: pointer;
+    -webkit-transition: ease-in 0.2s;
+    transition: ease-in 0.2s;
+  }
+  .settings .container .info .button:hover {
+    border-color: #292929;
+  }
+  .settings .container .info .button .text {
+    text-decoration: none;
+    color: #757575;
+  }
+  .settings .container .info .button .text:hover {
+    color: #292929;
+    font-weight: 600;
+  }
+  .settings .container .title {
+    font-size: 24px;
+    margin: 2.5vw;
+    letter-spacing: 2px;
+  }
+  .settings .container .containerMain {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .settings .container .containerMain .left .form .input {
+    width: 80vw;
+    margin-bottom: 20px;
+    margin-left: 5vw;
+  }
+  .settings .container .containerMain .left .form .input .text {
+    font-size: 16px;
+  }
+  .settings .container .containerMain .left .form .input .fill {
+    font-size: 16px;
+    margin-left: 0vw;
+  }
+  .settings .container .containerMain .left .form .button {
+    width: 80vw;
+    margin-left: 5vw;
+    font-size: 16px;
+  }
+  .settings .container .containerMain .right .profileImage {
+    height: 150px;
+    width: 150px;
+  }
+}
+
 @media (max-width: 500px) {
   .navbar {
     width: 100vw;
@@ -1159,8 +1268,9 @@
     margin-left: 0vw;
   }
   .settings .container .containerMain .left .form .button {
-    width: 80vw;
-    margin-left: 5vw;
+    width: 95vw;
+    margin-left: 2.5vw;
+    font-size: 14px;
   }
   .settings .container .containerMain .right .profileImage {
     height: 150px;

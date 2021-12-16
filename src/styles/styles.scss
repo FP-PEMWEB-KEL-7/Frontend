@@ -714,6 +714,125 @@ $gray-color-light: #dddddd;
   }
 }
 
+@media (max-width: 770px) and (min-width: 500px) {
+  .profile {
+    .container {
+      padding: 0 0 0 5vw;
+      max-width: 95vw;
+      width: 95vw;
+      display: flex;
+      flex-direction: column;
+
+      .leftSide {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        width: 95vw;
+        max-width: 95vw;
+        margin-top: 10px;
+        margin-bottom: 20px;
+
+        .profileImage {
+          height: 48px;
+          width: 48px;
+        }
+
+        .name {
+          font-size: 24px;
+          margin: 0 10px;
+        }
+
+        .totalArticle {
+          font-size: 14px;
+        }
+      }
+
+      .rightSide {
+        width: 95vw;
+      }
+    }
+  }
+
+  .settings {
+    .container {
+      .info {
+        padding: 0;
+        max-width: 95vw;
+        width: 95vw;
+        margin-left: 2.5vw;
+
+        .infoCenter {
+          font-size: 14px;
+        }
+
+        .button {
+          font-size: 16px;
+          cursor: pointer;
+          transition: ease-in 0.2s;
+
+          &:hover {
+            border-color: $black-color;
+          }
+
+          .text {
+            text-decoration: none;
+            color: $gray-color;
+
+            &:hover {
+              color: $black-color;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+
+      .title {
+        font-size: 24px;
+        margin: 2.5vw;
+        letter-spacing: 2px;
+      }
+
+      .containerMain {
+        display: flex;
+        flex-direction: column-reverse;
+
+        .left {
+          .form {
+            .input {
+              width: 80vw;
+              margin-bottom: 20px;
+              margin-left: 5vw;
+
+              .text {
+                font-size: 16px;
+              }
+
+              .fill {
+                font-size: 16px;
+                margin-left: 0vw;
+              }
+            }
+
+            .button {
+              width: 80vw;
+              margin-left: 5vw;
+              font-size: 16px;
+            }
+          }
+        }
+
+        .right {
+          .profileImage {
+            height: 150px;
+            width: 150px;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 500px) {
   .navbar {
     width: 100vw;
@@ -1001,8 +1120,9 @@ $gray-color-light: #dddddd;
             }
 
             .button {
-              width: 80vw;
-              margin-left: 5vw;
+              width: 95vw;
+              margin-left: 2.5vw;
+              font-size: 14px;
             }
           }
         }

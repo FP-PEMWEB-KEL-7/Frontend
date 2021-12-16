@@ -38,5 +38,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "main": "index.js",
+  "repository": "https://github.com/FP-PEMWEB-KEL-7/Frontend.git",
+  "author": "micjef <michaeljeffrysetiawan@gmail.com>",
+  "license": "MIT"
 }
