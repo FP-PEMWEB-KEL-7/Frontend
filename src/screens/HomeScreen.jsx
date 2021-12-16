@@ -2,7 +2,8 @@ import React from 'react'
 import BlogCard from '../components/BlogCard'
 import Navbar from '../components/Navbar'
 
-const HomeScreen = () => {
+const HomeScreen = ({ article }) => {
+  console.log(article);
   return (
     <div className="home">
       <Navbar 

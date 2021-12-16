@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../assets/images/medium-logo.png";
+import Logo from "../assets/images/open-blog-logo.png";
 import { UserCircleIcon, PlusIcon, CogIcon } from "@heroicons/react/solid";
 import "../styles/styles.css";
 import { Link } from "react-router-dom";

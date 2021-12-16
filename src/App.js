@@ -6,13 +6,26 @@ import ReadScreen from "./screens/ReadScreen";
 import SettingsScreen from "./screens/SettingsScreen";
 import WriteScreen from "./screens/WriteScreen";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import axios from './axios'
+import { useEffect, useState } from "react";
 
 
 function App() {
+  const [allArticle, setAllArticle] = useState([]);
+
+  useEffect(() => {
+    const headers = {
+      'Content-Type': 'text/plain'
+    };
+
+    const getAllArticle = async () => {
+      const response = await axios.get('/article/all', { headers });
+      setAllArticle(response.data);
+    }
+    getAllArticle()
+  }, [allArticle])
+
   return (
-    // <div>
-    //   <LoginScreen />
-    // </div>
     <Router>
       <div>
         <Switch>
@@ -35,7 +48,9 @@ function App() {
             <SettingsScreen />
           </Route>
           <Route exact path='/'>
-            <HomeScreen />
+            <HomeScreen 
+              article={allArticle}
+            />
           </Route>
         </Switch>
       </div>
