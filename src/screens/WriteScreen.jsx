@@ -1,10 +1,34 @@
 import React, { useState } from "react";
+import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
+import { saveWrite } from '../store/writeSlice'
 
 const WriteScreen = () => {
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
+
+  const dispatch = useDispatch();
+
+  const saveArticle = async (e) => {
+    e.preventDefault();
+    const newArticle = {
+      title: title,
+      content: content,
+      date: Date.now(),
+    }
+
+    if(title){
+      console.log(newArticle);
+      let hasSymbol = newArticle.content.substring(0, newArticle.content.length).match(/\n/);
+
+      console.log(hasSymbol);
+
+      dispatch(
+        saveWrite(newArticle)
+      )
+    }
+  }
 
   return (
     <div className="write">
@@ -27,7 +51,7 @@ const WriteScreen = () => {
           autoComplete="off"
         ></textarea>
         <div className="button">
-          <Link to='/' className="text">
+          <Link to='/' className="text" onClick={saveArticle}>
             <p className="text">Save Article</p>
           </Link>
         </div>
