@@ -6,5 +6,4 @@
 3. post data
 4. write article logic in write screen
 5. login and sign up logic
-6. Logo and Name App
-7. state management (use redux)
+6. state management (use redux)
